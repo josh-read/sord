@@ -37,7 +37,7 @@ def random_image():
     img_name = []
     [img_name.append(choice(chars)) for n in range(5)]
     img_name = ''.join(img_name)
-    ext = ['jpg', 'png', 'pdf']
+    ext = ['jpg', 'png']
     img_name = '.'.join([img_name, choice(ext)])
     img.save('/'.join([TARGET_DIR, img_name]))
 
