@@ -6,7 +6,7 @@ import os
 import shutil
 
 
-TARGET_DIR = 'mixed-pics'
+TARGET_DIR = 'mixed_pics'
 
 
 def random_color():

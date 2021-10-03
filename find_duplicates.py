@@ -5,7 +5,7 @@ import os
 from shutil import copyfile
 
 # Name of target directory to be sorted
-target_dir = "mixed-pics"
+target_dir = "mixed_pics"
 
 def find_duplicates(target_dir):
 
