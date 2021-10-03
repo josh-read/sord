@@ -4,10 +4,15 @@ import hashlib
 import os
 from shutil import copyfile
 
+
 # Name of target directory to be sorted
 target_dir = "mixed_pics"
 
+
 def find_duplicates(target_dir):
+    """Compare each file's hash to identify duplicates, return a list of
+    originals (first occurance of unique hash is considered original) and
+    duplicates (repeat occurances of hashes)."""
 
     # Get absolute path of target directory
     target_path = os.path.join(os.getcwd(), target_dir)
@@ -57,15 +62,20 @@ def find_duplicates(target_dir):
 
     return duplicates, originals
 
+
 def copy_originals(originals):
+    """Copy original images into new directory 'originals'."""
     for pic_path in originals:
         pic_name = os.path.split(pic_path)[-1]
         cp_path = os.path.join(os.getcwd(), "originals", pic_name)
         copyfile(pic_path, cp_path)
 
+
 def delete_duplicates(duplicates):
+    """Delete duplicate images in existing target directory."""
     for pic_path in duplicates:
         os.remove(pic_path)
+
 
 if __name__ == "__main__":
     
