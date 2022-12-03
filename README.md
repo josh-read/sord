@@ -1,11 +1,9 @@
 # **S**eperate **O**r **R**emove **D**uplicates
 
----
-
 Command line tool to identify duplicate files.
 Sord can be combined with other common command
-line tools to relocate or rename originals or
-delete duplicates. See usage for examples.
+line tools to move, copy or delete the originals
+or duplicates. See usage for examples.
 
 ## Install
 
