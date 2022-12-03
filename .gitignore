@@ -1,5 +1,12 @@
+# Packaging
+*.egg-info
+build
+
 # IDE
 .idea
+
+# Tools
+.pytest_cache/
 
 # Environment
 venv*
